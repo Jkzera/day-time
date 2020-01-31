@@ -7,13 +7,16 @@ function load(){
     if (hora >= 6 && hora < 12){ // Dia
         imagem.src = 'Manha.png' // var.src troca a imagem 
         document.body.style.background = '#e2cd9f'
+        msg.innerHTML = `Agora são ${hora} horas da Manhã!`
     }
     else if (hora >= 12 && hora < 18){ // Tarde
         imagem.src = 'Tarde2.png' // var.src troca a imagem 
         document.body.style.background = '#A0522D'
+        msg.innerHTML = `Agora são ${hora} horas da Tarde!`
     }
     else { // Noite
         imagem.src = 'Noite2.png' // var.src troca a imagem 
         document.body.style.background = '#4F4F4F'
+        msg.innerHTML = `Agora são ${hora} horas da Noite!`
     }
 }
