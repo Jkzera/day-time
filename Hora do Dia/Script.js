@@ -4,7 +4,7 @@ function load(){
     var hora = new Date().getHours() // Pega o horário do computador
     msg.innerHTML = `Agora são ${hora} horas.`
     //Teste do horário
-    if (hora >= 0 && hora < 12){ // Dia
+    if (hora >= 6 && hora < 12){ // Dia
         imagem.src = 'Manha.png' // var.src troca a imagem 
         document.body.style.background = '#e2cd9f'
     }
